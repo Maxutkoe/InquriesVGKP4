@@ -17,7 +17,7 @@ body {
   line-height: 1.4;
   margin: 0 auto;
   padding: 2em;
-  overflow-x: none;
+  overflow-x: hidden;
 
 }
 button{
@@ -73,7 +73,7 @@ select {
   appearance: none;
   border: 0;
   outline: 0;
-  margin: 1% 5%;
+  margin: 0% -5%;
   font: inherit;
   /* Personalize */
   width: 20rem;
@@ -110,8 +110,7 @@ select {
         <input type="text" name="school" placeholder="Введите номер Детского Сада/Школы, Группы/Класса" id="study">
         <input type="text" name="phone" placeholder="Введите номер телефона" id="phone">
         <input type="text" name="email" placeholder="Введите Адрес Электронной почты" id="email">
-    </form>
-    <div class="select_mate" data-mate-select="active" >
+        <div class="select_mate" data-mate-select="active" >
 <select name="" onchange="" onclick="return false;" id="vallue">
 <option value="Справка об отсутствии контактов с инфекционными больными">Справка об отсутствии контактов с инфекционными больными</option>
 <option value="Выписка из амбулаторной карты">Выписка из амбулаторной карты</option>
@@ -119,6 +118,8 @@ select {
 <option value="Справка 086/у для абитуриентов">Справка 086/у для абитуриентов</option>
 <option value="Справка о группе здоровья, группе по физкультуре">Справка о группе здоровья, группе по физкультуре</option>
   </select>
+  </div>
+    </form>
     <button type="submit" onclick="send()">Отправить</button>
 
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
