@@ -53,10 +53,10 @@ input:hover{
     margin: 10px 10%;
 }
 :root {
-  --arrow-bg: rgba(255, 255, 255, 0.3);
+  --arrow-bg: rgba(0, 0, 0, 1.3);
   --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
-  --option-bg: white;
-  --select-bg: rgba(255, 255, 255, 0.2);
+  --option-bg: black;
+  --select-bg: rgba(0, 0, 0, 1.2);
 }
 * {
   box-sizing: border-box;
@@ -78,7 +78,7 @@ select {
   /* Personalize */
   width: 20rem;
   padding: 1rem 4rem 1rem 1rem;
-  background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+  background: /*var(--arrow-icon) no-repeat right 0.8em center / 1.4em*/
     var(--tg-theme-secondary-bg-color);
   color: var(--tg-theme-text-color);
   
@@ -105,12 +105,7 @@ select {
     </head>
     <body>
     <form>
-        <input type="text" name="name" placeholder="Введите ФИО" id="fio">
-        <input type="text" name="date" placeholder="Введите Дату Рождения" id="date">
-        <input type="text" name="school" placeholder="Номер Детского Сада/Школы, Группа/Класс" id="study">
-        <input type="text" name="phone" placeholder="Введите номер телефона" id="phone">
-        <input type="text" name="email" placeholder="Введите Адрес Электронной почты" id="email">
-        <div class="select_mate" data-mate-select="active" >
+    <div class="select_mate" data-mate-select="active" >
 <select name="" onchange="" onclick="return false;" id="vallue">
 <option value="Справка об отсутствии контактов с инфекционными больными">Справка об отсутствии контактов с инфекционными больными</option>
 <option value="Выписка из амбулаторной карты">Выписка из амбулаторной карты</option>
@@ -119,6 +114,11 @@ select {
 <option value="Справка о группе здоровья, группе по физкультуре">Справка о группе здоровья, группе по физкультуре</option>
   </select>
   </div>
+        <input type="text" name="name" placeholder="Введите ФИО" id="fio">
+        <input type="text" name="date" placeholder="Введите Дату Рождения" id="date">
+        <input type="text" name="school" placeholder="Номер Детского Сада/Школы, Группа/Класс" id="study">
+        <input type="text" name="phone" placeholder="Введите номер телефона" id="phone">
+        <input type="text" name="email" placeholder="Введите Адрес Электронной почты" id="email">
     </form>
     <button type="submit" onclick="send()">Отправить</button>
 
