@@ -53,10 +53,10 @@ input:hover{
     margin: 10px 10%;
 }
 :root {
-  --arrow-bg: rgba(0, 0, 0, 1.3);
+  --arrow-bg: rgba(255, 255, 255, 0.3);
   --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
-  --option-bg: black;
-  --select-bg: rgba(0, 0, 0, 1.2);
+  --option-bg: white;
+  --select-bg: rgba(255, 255, 255, 0.2);
 }
 * {
   box-sizing: border-box;
@@ -73,12 +73,12 @@ select {
   appearance: none;
   border: 0;
   outline: 0;
-  margin: 0% -5%;
+  margin: 0% -7%;
   font: inherit;
   /* Personalize */
   width: 20rem;
   padding: 1rem 4rem 1rem 1rem;
-  background: /*var(--arrow-icon) no-repeat right 0.8em center / 1.4em*/
+  background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
     var(--tg-theme-secondary-bg-color);
   color: var(--tg-theme-text-color);
   
